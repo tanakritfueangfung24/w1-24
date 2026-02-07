@@ -4,6 +4,7 @@ export default function App() {
   return (
     <ScrollView>
       {/* ส่วนโปรไฟล์ */}
+      {/* วาง "รูปโปรไฟล์" และ "ข้อมูลตัวเลข" ไว้ข้างกันในแนวนอน */}
       <View style={{flexDirection:"row", alignItems:"center"}}>
         <Image style={{ width: 100, height: 100, borderRadius: 50, margin: 20 }} source={{ uri: "https://images.squarespace-cdn.com/content/v1/6670add926f2a64cd00fb0e7/80d782d8-d448-4ef0-9439-9f5a2783a7f4/Chii+button.png" }} />
 
@@ -11,10 +12,9 @@ export default function App() {
           <Text style={{ fontSize: 18, fontWeight: "600" }}>chiikawa</Text>
           <Text><Text style={{ fontWeight: "600" }}>13</Text> posts <Text style={{ fontWeight: "600" }}>200K</Text> follwers <Text style={{ fontWeight: "600" }}>14</Text> follwings </Text>
         </View>
-
       </View>
 
-      {/* ไฮไลต์ */}
+      {/* ไฮไลต์   ปัดซ้าย-ขวา         ซ่อนแถบเลื่อน                                       เพื่อเว้นระยะห่าง*/} 
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} contentContainerStyle={{gap:15}}>
 
         <View>
@@ -73,7 +73,7 @@ export default function App() {
 
       </ScrollView>
 
-      {/* โพสต์ */}
+      {/* โพสต์       แนวนอน              ขึ้นแถวใหม่         เว้น        ขยับด้านบน*/}  
       <View style={{flexDirection:"row", flexWrap:"wrap", gap: 5, marginTop:20}}>
         <Image source={require("./assets/banner4.gif")} style={{width:"32%", height:200}} />
         <Image source={require("./assets/banner2.gif")} style={{width:"32%", height:200}} />
